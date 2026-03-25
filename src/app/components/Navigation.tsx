@@ -42,9 +42,12 @@ export function Navigation() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center gap-3 group relative"
           >
-            <div className={`relative ${isScrolled ? 'bg-gradient-to-br from-green-500 to-emerald-600' : 'bg-white/20 backdrop-blur-xl'} p-2.5 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-              <Leaf className={`w-7 h-7 ${isScrolled ? 'text-white' : 'text-white'}`} />
-              {!isScrolled && <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-emerald-500 rounded-xl opacity-80"></div>}
+            <div className={`relative ${isScrolled ? '' : ''} group-hover:scale-110 transition-transform duration-300`}>
+              <img 
+                src="/src/app/assets/GoGreen.png" 
+                alt="GoGreen Logo" 
+                className="w-15 h-15 object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span className={`text-2xl font-black ${isScrolled ? 'text-gray-900' : 'text-white'} group-hover:text-green-600 transition-colors`}>
