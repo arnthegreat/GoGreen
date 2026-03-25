@@ -15,13 +15,13 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-green-900">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-950 via-green-900 to-teal-950">
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)`,
+            backgroundImage: `radial-gradient(circle at px 2px, rgba(255,255,255,0.15) 1px, transparent 0)`,
             backgroundSize: "50px 50px",
           }}
         ></div>
@@ -42,7 +42,7 @@ export function Hero() {
         {/* Left Content */}
         <div className="space-y-8 text-white">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-green-500/20 backdrop-blur-xl border border-green-400/30 px-5 py-2.5 rounded-full shadow-2xl">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 backdrop-blur-xl border border-green-400/30 px-5 py-2.5 rounded-full shadow-2xl">
             <span className="text-green-300 font-bold text-sm">
               Fresh • Healthy • Delicious
             </span>
@@ -50,13 +50,13 @@ export function Hero() {
 
           <div>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight">
-              <span className="text-white">
+              <span className="bg-gradient-to-r from-white via-green-100 to-emerald-200 bg-clip-text text-transparent">
                 GoGreen
               </span>
               <br />
               <span className="text-white">Vegetarian</span>
               <br />
-              <span className="text-green-400">
+              <span className="bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 bg-clip-text text-transparent">
                 Restaurant
               </span>
             </h1>
@@ -76,7 +76,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <button
               onClick={scrollToMenu}
-              className="group relative bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-2xl text-lg font-black flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl hover:shadow-green-500/50"
+              className="group relative bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 hover:from-green-600 hover:via-emerald-600 hover:to-teal-600 text-white px-10 py-5 rounded-2xl text-lg font-black flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl hover:shadow-green-500/50"
             >
               <span>Explore Menu</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
@@ -95,7 +95,7 @@ export function Hero() {
         <div className="relative hidden lg:block">
           {/* Main Featured Image */}
           <div className="relative">
-            <div className="absolute -inset-4 bg-green-500 rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
+            <div className="absolute -inset-2 bg-gradient-to-r from-green-500 to-emerald-700 rounded-3xl blur-2xl opacity-70 animate-pulse"></div>
             <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-2 shadow-2xl">
               <div className="rounded-2xl overflow-hidden">
                 <img
@@ -110,7 +110,7 @@ export function Hero() {
           {/* Floating Cards */}
           <div className="absolute -bottom-8 -left-8 bg-white rounded-2xl shadow-2xl p-4 max-w-xs transform hover:scale-105 transition-transform">
             <div className="flex items-center gap-3">
-              <div className="bg-green-500 p-3 rounded-xl">
+              <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-3 rounded-xl">
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -124,7 +124,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="absolute -top-8 -right-8 bg-amber-400 rounded-2xl shadow-2xl p-4 max-w-xs transform hover:scale-105 transition-transform">
+          <div className="absolute -top-8 -right-8 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl shadow-2xl p-4 max-w-xs transform hover:scale-105 transition-transform">
             <div className="flex items-center gap-2 text-white">
               <Star className="w-5 h-5 fill-white" />
               <span className="font-black text-lg">
