@@ -25,8 +25,8 @@ export function Founder() {
               Founder & Culinary Visionary
             </p>
             <div className="relative mb-6">
-              <Quote className="absolute -top-4 -left-4 w-12 h-12 text-green-300" />
-              <blockquote className="text-lg text-white italic pl-8 border-l-4 border-green-600">
+              <Quote className="absolute top-0 left-3 w-8 h-8 text-green-300" />
+              <blockquote className="text-lg text-white italic pl-12 border-l-4 border-green-600">
                 "My dream was simple: to show Cambodia and the
                 world that vegetarian food can be as rich,
                 flavorful, and satisfying as any traditional
