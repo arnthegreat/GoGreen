@@ -1,4 +1,10 @@
 import { ShoppingBag, Store, Sparkles } from "lucide-react";
+import PrahokKtis3 from "../assets/PrahokKtis3.jpg";
+import KapiPao3 from "../assets/KapiPao3.jpg";
+import FermentedSoybeanPaste3 from "../assets/FermentedSoybeanPaste3.jpg";
+import SoybeanKapiPao from "../assets/SoybeanKapiPao.jpg";
+import SoybeanPrahokKtis from "../assets/SoybeanPrahokKtis.jpg";
+import FermentedSoybeanPaste from "../assets/FermentedSoybeanPaste.jpg";
 
 const retailProducts = [
   {
@@ -7,9 +13,8 @@ const retailProducts = [
     description:
       "Savory Cambodian soybean dip with coconut, rich umami flavor",
     category: "Sauces & Condiments",
-    image: "/src/app/assets/PrahokKtis3.jpg",
+    image: PrahokKtis3,
     position: "50% 100%",
-    
   },
   {
     id: 2,
@@ -17,7 +22,7 @@ const retailProducts = [
     description:
       "Soft steamed bun filled with savory, nutritious soybean mixture",
     category: "Ready-to-Cook",
-    image: "/src/app/assets/KapiPao3.jpg",
+    image: KapiPao3,
   },  
   {
     id: 3,
@@ -25,7 +30,7 @@ const retailProducts = [
     description:
       "Savory fermented soybean paste with deep umami flavor",
     category: "Ready-to-Cook",
-    image: "/src/app/assets/FermentedSoybeanPaste3.jpg",
+    image: FermentedSoybeanPaste3,
     position: "20% 10%",
   },
   {
@@ -34,7 +39,7 @@ const retailProducts = [
     description:
       "Smaller soft steamed bun filled with savory, nutritious soybean mixture",
     category: "Sauces & Condiments",
-    image: "/src/app/assets/SoybeanKapiPao.jpg",
+    image: SoybeanKapiPao,
   },
   {
     id: 5,
@@ -42,14 +47,14 @@ const retailProducts = [
     description:
       "Smaller savory Cambodian soybean dip with coconut, rich umami flavo",
     category: "DIY Kits",
-    image: "/src/app/assets/SoybeanPrahokKtis.jpg",
+    image: SoybeanPrahokKtis,
   },
   {
     id: 6,
     name: "Fermented Soybean Paste Small",
     description: "Smaller savory fermented soybean paste with deep umami flavor",
     category: "Sauces & Condiments",
-    image: "/src/app/assets/FermentedSoybeanPaste.jpg",
+    image: FermentedSoybeanPaste,
     position: "100% 10%",
   },
 ];

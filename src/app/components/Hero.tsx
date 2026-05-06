@@ -6,6 +6,7 @@ import {
   Sparkles,
   Award,
 } from "lucide-react";
+import DeepFriedVeganFish from "../assets/DeepFriedVeganFish.png";
 
 export function Hero() {
   const scrollToMenu = () => {
@@ -99,7 +100,7 @@ export function Hero() {
             <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-2 shadow-2xl">
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="/src/app/assets/DeepFriedVeganFish.png"
+                  src={DeepFriedVeganFish}
                   alt="Fresh Bowl"
                   className="w-full h-[500px] object-cover"
                 />

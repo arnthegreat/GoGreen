@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Leaf, Menu, X } from 'lucide-react';
+import GoGreenLogo from '../assets/GoGreen.png';
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,7 +45,7 @@ export function Navigation() {
           >
             <div className={`relative ${isScrolled ? '' : ''} group-hover:scale-110 transition-transform duration-300`}>
               <img 
-                src="/src/app/assets/GoGreen.png" 
+                src={GoGreenLogo} 
                 alt="GoGreen Logo" 
                 className="w-15 h-15 object-contain"
               />

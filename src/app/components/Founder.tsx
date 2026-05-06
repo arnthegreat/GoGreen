@@ -1,5 +1,6 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Quote } from "lucide-react";
+import ChanlangPrumImage from "../assets/ChanlangPrum.jpg";
 
 export function Founder() {
   return (
@@ -84,7 +85,7 @@ export function Founder() {
             <div className="relative">
               <div className="absolute -inset-2 bg-gradient-to-r from-green-500 to-emerald-700 rounded-3xl blur-2xl opacity-70 animate-pulse"></div>
               <img
-                src="/src/app/assets/ChanlangPrum.jpg"
+                src={ChanlangPrumImage}
                 alt="Chanlang Prum - Founder of GoGreen"
                 className="relative w-full h-[1000px] object-cover rounded-2xl shadow-2xl"
               />
