@@ -3,44 +3,54 @@ import { ShoppingBag, Store, Sparkles } from "lucide-react";
 const retailProducts = [
   {
     id: 1,
-    name: "GoGreen Signature Sauce",
+    name: "Soybean Prahok Ktis",
     description:
-      "Our famous house-made sauce, now available to take home",
+      "Savory Cambodian soybean dip with coconut, rich umami flavor",
     category: "Sauces & Condiments",
+    image: "/src/app/assets/PrahokKtis3.jpg",
+    position: "50% 100%",
+    
   },
   {
     id: 2,
-    name: "Organic Veggie Patties",
+    name: "Soybean Kapi Pao",
     description:
-      "Ready-to-cook patties made from fresh vegetables and herbs",
+      "Soft steamed bun filled with savory, nutritious soybean mixture",
     category: "Ready-to-Cook",
-  },
+    image: "/src/app/assets/KapiPao3.jpg",
+  },  
   {
     id: 3,
-    name: "Plant-Based Dumplings",
+    name: "Fermented Soybean Paste",
     description:
-      "Handcrafted dumplings filled with savory vegetable mix",
+      "Savory fermented soybean paste with deep umami flavor",
     category: "Ready-to-Cook",
+    image: "/src/app/assets/FermentedSoybeanPaste3.jpg",
+    position: "20% 10%",
   },
   {
     id: 4,
-    name: "Green Curry Paste",
+    name: "Soybean Kapi Pao Small",
     description:
-      "Authentic Cambodian curry paste, vegetarian-friendly",
+      "Smaller soft steamed bun filled with savory, nutritious soybean mixture",
     category: "Sauces & Condiments",
+    image: "/src/app/assets/SoybeanKapiPao.jpg",
   },
   {
     id: 5,
-    name: "Fresh Spring Roll Kit",
+    name: "Soybean Prahok Ktis Small",
     description:
-      "Everything you need to make our famous spring rolls at home",
+      "Smaller savory Cambodian soybean dip with coconut, rich umami flavo",
     category: "DIY Kits",
+    image: "/src/app/assets/SoybeanPrahokKtis.jpg",
   },
   {
     id: 6,
-    name: "Organic Salad Dressing Set",
-    description: "Collection of our best-selling dressings",
+    name: "Fermented Soybean Paste Small",
+    description: "Smaller savory fermented soybean paste with deep umami flavor",
     category: "Sauces & Condiments",
+    image: "/src/app/assets/FermentedSoybeanPaste.jpg",
+    position: "100% 10%",
   },
 ];
 
@@ -85,6 +95,7 @@ export function Products() {
               key={product.id}
               className="bg-gradient-to-br from-white to-green-50 border-2 border-green-100 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-green-300"
             >
+              <img src={product.image} alt={product.name} className="w-full h-92 object-cover rounded-lg mb-4" style={{ objectPosition: product.position }} />
               <div className="flex items-start justify-between mb-3">
                 <span className="text-xs font-semibold text-green-700 bg-green-100 px-3 py-1 rounded-full">
                   {product.category}

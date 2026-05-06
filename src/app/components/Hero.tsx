@@ -21,14 +21,14 @@ export function Hero() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `radial-gradient(circle at px 2px, rgba(255,255,255,0.15) 1px, transparent 0)`,
+            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 2px, transparent 0)`,
             backgroundSize: "50px 50px",
           }}
         ></div>
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-green-500/20 rounded-full blur-3xl animate-pulse"></div>
+      {/*<div className="absolute top-20 left-10 w-72 h-72 bg-green-500/20 rounded-full blur-3xl animate-pulse"></div>
       <div
         className="absolute bottom-20 right-10 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl animate-pulse"
         style={{ animationDelay: "1s" }}
@@ -36,7 +36,7 @@ export function Hero() {
       <div
         className="absolute top-1/2 left-1/4 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl animate-pulse"
         style={{ animationDelay: "2s" }}
-      ></div>
+      ></div>*/}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 grid lg:grid-cols-2 gap-16 items-center">
         {/* Left Content */}
