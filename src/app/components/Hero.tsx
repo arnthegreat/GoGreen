@@ -93,7 +93,7 @@ export function Hero() {
         </div>
 
         {/* Right Content - Food Showcase */}
-        <div className="relative hidden lg:block">
+        <div className="relative">
           {/* Main Featured Image */}
           <div className="relative">
             <div className="absolute -inset-2 bg-gradient-to-r from-green-500 to-emerald-700 rounded-3xl blur-2xl opacity-70 animate-pulse"></div>
@@ -102,7 +102,7 @@ export function Hero() {
                 <img
                   src={DeepFriedVeganFish}
                   alt="Fresh Bowl"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                 />
               </div>
             </div>
