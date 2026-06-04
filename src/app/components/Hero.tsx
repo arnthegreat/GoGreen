@@ -109,30 +109,30 @@ export function Hero() {
           </div>
 
           {/* Floating Cards */}
-          <div className="absolute -bottom-8 -left-8 bg-white rounded-2xl shadow-2xl p-4 max-w-xs transform hover:scale-105 transition-transform">
+          <div className="absolute -bottom-5 left-0 sm:-bottom-8 sm:-left-8 bg-white rounded-2xl shadow-2xl p-3 sm:p-4 max-w-[14rem] sm:max-w-xs transform hover:scale-105 transition-transform">
             <div className="flex items-center gap-3">
               <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-3 rounded-xl">
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <div>
-                <div className="text-2xl font-black text-gray-900">
+                <div className="text-xl sm:text-2xl font-black text-gray-900">
                   100%
                 </div>
-                <div className="text-sm text-gray-600 font-semibold">
+                <div className="text-xs sm:text-sm text-gray-600 font-semibold">
                   Plant-Based
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="absolute -top-8 -right-8 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl shadow-2xl p-4 max-w-xs transform hover:scale-105 transition-transform">
+          <div className="absolute -top-5 right-0 sm:-top-8 sm:-right-8 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl shadow-2xl p-3 sm:p-4 max-w-[14rem] sm:max-w-xs transform hover:scale-105 transition-transform">
             <div className="flex items-center gap-2 text-white">
               <Star className="w-5 h-5 fill-white" />
-              <span className="font-black text-lg">
+              <span className="font-black text-base sm:text-lg">
                 Most Popular
               </span>
             </div>
-            <div className="text-white/90 text-sm mt-1">
+            <div className="text-white/90 text-xs sm:text-sm mt-">
               Fresh Daily
             </div>
           </div>
