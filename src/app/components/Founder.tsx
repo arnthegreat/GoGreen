@@ -87,7 +87,7 @@ export function Founder() {
               <img
                 src={ChanlangPrumImage}
                 alt="Chanlang Prum - Founder of GoGreen"
-                className="relative w-full h-[1000px] object-cover rounded-2xl shadow-2xl"
+                className="relative w-full h-[900px] w-[900x] object-cover rounded-2xl shadow-2xl"
               />
             </div>
           </div>

@@ -79,7 +79,7 @@ export function Hero() {
               onClick={scrollToMenu}
               className="group relative bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 hover:from-green-600 hover:via-emerald-600 hover:to-teal-600 text-white px-10 py-5 rounded-2xl text-lg font-black flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl hover:shadow-green-500/50"
             >
-              <span>Explore Menu</span>
+              <span>Order Now</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               <div className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </button>
@@ -109,7 +109,7 @@ export function Hero() {
           </div>
 
           {/* Floating Cards */}
-          <div className="absolute -bottom-5 left-0 sm:-bottom-8 sm:-left-8 bg-white rounded-2xl shadow-2xl p-3 sm:p-4 max-w-[14rem] sm:max-w-xs transform hover:scale-105 transition-transform">
+          <div className="absolute -bottom-5 -left-2 sm:-bottom-8 sm:-left-8 bg-white rounded-2xl shadow-2xl p-3 sm:p-4 max-w-[14rem] sm:max-w-xs transform hover:scale-105 transition-transform">
             <div className="flex items-center gap-3">
               <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-3 rounded-xl">
                 <Leaf className="w-6 h-6 text-white" />
@@ -125,7 +125,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="absolute -top-5 right-0 sm:-top-8 sm:-right-8 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl shadow-2xl p-3 sm:p-4 max-w-[14rem] sm:max-w-xs transform hover:scale-105 transition-transform">
+          <div className="absolute -top-5 -right-2 sm:-top-8 sm:-right-8 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl shadow-2xl p-3 sm:p-4 max-w-[14rem] sm:max-w-xs transform hover:scale-105 transition-transform">
             <div className="flex items-center gap-2 text-white">
               <Star className="w-5 h-5 fill-white" />
               <span className="font-black text-base sm:text-lg">

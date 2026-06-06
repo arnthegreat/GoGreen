@@ -3,6 +3,7 @@ import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Founder } from './components/Founder';
+import { CookingClasses } from './components/CookingClasses';
 import { Menu } from './components/Menu';
 import { Benefits } from './components/Benefits';
 import { Products } from './components/Products';
@@ -18,6 +19,7 @@ export default function App() {
         <Hero />
         <About />
         <Founder />
+        <CookingClasses />
         <Menu />
         <Benefits />
         <Products />
