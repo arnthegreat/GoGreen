@@ -17,8 +17,8 @@ export default function App() {
       <Navigation />
       <main>
         <Hero />
-        <About />
         <Founder />
+        <About />
         <CookingClasses />
         <Menu />
         <Benefits />

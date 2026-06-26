@@ -12,11 +12,11 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative py-24 bg-gradient-to-br from-white via-green-50/30 to-white overflow-hidden"
+      className="relative py-24 bg-gradient-to-br from-emerald-950 via-green-900 to-teal-950 overflow-hidden"
     >
-      {/* Background Elements */}
+      {/* Background Elements 
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-green-200/20 to-emerald-200/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-teal-200/20 to-green-200/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-teal-200/20 to-green-200/20 rounded-full blur-3xl"></div>*/}
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -28,18 +28,20 @@ export function About() {
             </span>
           </div>
 
-          <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-6">
-            About{" "}
-            <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-7xl font-black text-white mb-6">
+            About{" "}  
+            <span className="bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200 bg-clip-text text-transparent">
               GoGreen
             </span>
           </h2>
-
+          <div className="w-24 h-1 bg-green-400 rounded-full mx-auto"></div>
+{/*
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="h-1 w-24 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full"></div>
             <Heart className="w-5 h-5 text-red-500 fill-red-500 animate-pulse" />
             <div className="h-1 w-24 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full"></div>
           </div>
+*/}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
@@ -60,14 +62,14 @@ export function About() {
 
           {/* Content Side */}
           <div className="space-y-6">
-            <h3 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight">
+            <h3 className="text-4xl md:text-5xl font-black text-white leading-tight">
               A Green Revolution in{" "}
-              <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-200 to-emerald-200 bg-clip-text text-transparent">
                 Phnom Penh
               </span>
             </h3>
 
-            <p className="text-xl text-gray-700 leading-relaxed">
+            <p className="text-xl text-white leading-relaxed">
               Established in the heart of Phnom Penh, GoGreen
               Vegetarian Restaurant is more than just a dining
               destination—it's a movement towards healthier,
@@ -76,7 +78,7 @@ export function About() {
               incredibly delicious.
             </p>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               Our mission is to transform the way Cambodia
               thinks about vegetarian food by offering
               authentic, flavorful dishes that celebrate local
@@ -84,7 +86,7 @@ export function About() {
               while being completely plant-based.
             </p>
 
-            {/* Feature Grid */}
+            {/* Feature Grid 
             <div className="grid grid-cols-2 gap-4 pt-8">
               <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-2xl p-6 text-center hover:scale-105 transition-transform cursor-pointer">
                 <div className="bg-white rounded-xl p-3 inline-block mb-3 shadow-md">
@@ -104,6 +106,7 @@ export function About() {
                 </p>
               </div>
             </div>
+            */}
 
             {/* CTA Button */}
             <div className="pt-6">
@@ -116,7 +119,6 @@ export function About() {
                 className="group bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 hover:from-green-600 hover:via-emerald-600 hover:to-teal-600 text-white px-8 py-4 rounded-2xl font-black text-lg transition-all transform hover:scale-105 shadow-2xl hover:shadow-green-500/50 inline-flex items-center gap-3"
               >
                 <span>Explore Our Menu</span>
-                <Sparkles className="w-5 h-5 group-hover:rotate-12 transition-transform" />
               </button>
             </div>
           </div>

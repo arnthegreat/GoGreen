@@ -6,7 +6,7 @@ export function Founder() {
   return (
     <section
       id="founder"
-      className="py-20 relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-950 via-green-900 to-teal-950"
+      className="py-20 relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-bl from-teal-950 via-green-900 to-emerald-950"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
