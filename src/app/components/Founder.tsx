@@ -22,7 +22,7 @@ export function Founder() {
               Chanlang Prum
             </h3>
             <p className="text-xl bg-gradient-to-r from-white via-green-100 to-emerald-500 bg-clip-text text-transparent font-semibold mb-6">
-              Founder & Culinary Visionary
+              Founder's Vision
             </p>
             <div className="relative mb-6">
               <Quote className="absolute top-0 left-3 w-8 h-8 text-green-300" />
@@ -35,51 +35,54 @@ export function Founder() {
                 sustainability."
               </blockquote>
             </div>
+            
+            <p className="text-xl bg-gradient-to-r from-white via-green-100 to-emerald-500 bg-clip-text text-transparent font-semibold mb-6">
+              Founder's Story
+            </p>
+
             <p className="text-lg text-white mb-4 leading-relaxed">
-              For founder Chanlang Prum, a lifelong vegetarian
-              with a deep passion for cooking, sharing healthy
-              food was always a dream. Her culinary journey
-              began humbly in 2018, selling homemade vegetarian
-              lunchboxes. After a brief and unsuccessful venture
-              opening "Angel Salon" with her closest friend,
-              Chanlang decided to return to her true calling.
-              She opened a small food kiosk on the streets of
-              Phnom Penh, and it was there that the brand
-              "GoGreen" was officially born.{" "}
+              My journey toward founding Gogreen Vegetarian began long before the restaurant itself was established.
             </p>
             <p className="text-lg text-white mb-4 leading-relaxed">
-              The real turning point arrived in 2020 during the
-              height of the COVID-19 pandemic. A deeply trusted
-              friend from Hong Kong visited Cambodia and asked
-              Chanlang what her ultimate dream was. When she
-              shared her vision of owning a full vegetarian
-              restaurant, he encouraged her to draft a business
-              model and generously invested in her idea. With
-              his support, GoGreen transformed from a street
-              kiosk into a legitimate restaurant in the BKK
-              district. Operating a new business during a global
-              crisis brought many struggles, but Chanlang never
-              lost sight of her community, consistently
-              volunteering to cook and provide food for
-              charities and those most affected by the pandemic.
+              Growing up in Banteay Meanchey Province, Cambodia, near the Thailand border, I developed a deep love and compassion for animals from an early age. In 2002, at the age of sixteen, I was introduced to the philosophy of vegetarianism through a Chinese temple founded by Taiwanese practitioners in my hometown. Although I did not immediately adopt a vegetarian lifestyle, the experience planted a seed that would later shape my life’s purpose.
             </p>
-            <p className="text-lg text-white leading-relaxed">
-              After years of resilience and growth, GoGreen
-              outgrew its original space and relocated to a
-              welcoming new place in 2024 to accommodate its
-              expanding family of diners. Chanlang's vision also
-              began to stretch beyond the restaurant doors. In
-              2025, GoGreen partnered with a local factory to
-              launch a signature plant-based version of Prahok
-              Ktis, which successfully made its way from
-              convenience stores to major supermarket shelves.
-              Today, the innovation continues as GoGreen
-              prepares to launch Hsama—Cambodia's very first
-              fully vegan sauce—proving that from a small street
-              kiosk to a thriving brand, the mission to share
-              delicious, healthy, and compassionate food remains
-              stronger than ever.
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              Years later, after studying Buddhist teachings related to karma and the interconnectedness of all living beings, I made the decision to become a full vegetarian. Today, I have maintained this commitment for more than sixteen years.
             </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              Before becoming an entrepreneur, I worked in a variety of professional roles, including Receptionist, Administrator, Secretary, VIP Service Executive, and Personal Assistant. These experiences taught me discipline, leadership, communication, and the importance of serving others with sincerity and professionalism.
+            </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              Despite my career progression, I carried a dream of creating a vegetarian restaurant that would promote health, compassion, and environmental awareness.
+            </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              On July 18, 2020, that dream became reality when Gogreen Vegetarian officially opened its doors, supported by the financial partnership of my Hong Kong friend, Terry.
+            </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              Only three months later, the COVID-19 pandemic impacted the entire world. During the same period, I was pregnant with my youngest child and faced severe pregnancy sickness, financial uncertainty, landlord disputes, my husband’s job loss and COVID-19 infection, as well as significant emotional and mental challenges.
+            </p>
+            <p className="text-lg text-white mb-4leading-relaxed">
+              There were many moments when I considered closing the business.
+            </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              However, every challenge strengthened my conviction that Gogreen existed for a purpose greater than myself.
+            </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              Through resilience and continuous learning, Gogreen has remained open and continued to grow. Today, we operate a restaurant and have developed three signature vegetarian products: Brohok KTIS, Kapi Pao, and Fermented Soybean, which are available in multiple retail channels throughout Cambodia.
+            </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              Over the past six years, I have also dedicated myself to sharing vegetarian knowledge through cooking classes, recipe development, and supporting food establishments in transitioning from meat-based operations to vegetarian concepts.
+            </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              One of the most important lessons I have learned is that leadership begins with personal growth. Success requires not only passion but also continuous learning, self-development, and the courage to take responsibility during difficult times.
+            </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+              Looking toward the future, my dream is to establish a dedicated vegetarian food manufacturing facility in Cambodia and bring Khmer vegetarian cuisine to international markets. I hope future generations will continue building upon this mission and help introduce Cambodian plant-based products and culinary traditions to the world. 
+            </p>
+            <p className="text-lg text-white mb-4 leading-relaxed">
+            Gogreen is more than a business. It is a lifelong commitment to health, compassion, sustainability, and positive impact.
+            </p>
+            
           </div>
           <div className="order-1 md:order-2">
             <div className="relative">
@@ -87,7 +90,7 @@ export function Founder() {
               <img
                 src={ChanlangPrumImage}
                 alt="Chanlang Prum - Founder of GoGreen"
-                className="relative w-full h-[900px] w-[900x] object-cover rounded-2xl shadow-2xl"
+                className="relative w-full h-[900px] object-cover rounded-2xl shadow-2xl"
               />
             </div>
           </div>

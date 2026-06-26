@@ -22,7 +22,7 @@ export function About() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-100 to-emerald-100 border border-green-200 px-6 py-3 rounded-full mb-6 shadow-lg">
-            <Sparkles className="w-5 h-5 text-green-600" />
+            {/*<Sparkles className="w-5 h-5 text-green-600" />*/}
             <span className="text-green-800 font-bold text-sm uppercase tracking-wider">
               About Us
             </span>
