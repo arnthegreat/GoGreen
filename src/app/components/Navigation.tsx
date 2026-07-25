@@ -48,14 +48,14 @@ export function Navigation() {
                 src={GoGreenLogo} 
                 alt="GoGreen Logo" 
                 className="w-15 h-15 object-contain"
-              />f
+              />
             </div>
             <div className="flex flex-col">
               <span className={`text-2xl font-black ${isScrolled ? 'text-gray-900' : 'text-white'} group-hover:text-green-600 transition-colors`}>
                 GoGreen
               </span>
               <span className={`text-xs font-bold ${isScrolled ? 'text-green-600' : 'text-green-300'} -mt-1`}>
-                Restaurant
+                Vegetarian
               </span>
             </div>
           </button>

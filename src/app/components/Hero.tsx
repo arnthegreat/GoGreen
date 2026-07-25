@@ -11,7 +11,7 @@ import DeepFriedVeganFish from "../assets/DeepFriedVeganFish.png";
 export function Hero() {
   const scrollToMenu = () => {
     document
-      .getElementById("menu")
+      .getElementById("products")
       ?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -87,7 +87,7 @@ export function Hero() {
               onClick={scrollToMenu}
               className="group relative bg-white/10 backdrop-blur-xl hover:bg-white/20 text-white px-10 py-5 rounded-2xl text-lg font-black border-2 border-white/30 hover:border-white/50 transition-all shadow-xl"
             >
-              View Menu
+              View Products
             </button>
           </div>
         </div>
