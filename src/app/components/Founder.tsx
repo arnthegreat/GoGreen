@@ -82,6 +82,8 @@ export function Founder() {
             <p className="text-lg text-white mb-4 leading-relaxed">
             Gogreen is more than a business. It is a lifelong commitment to health, compassion, sustainability, and positive impact.
             </p>
+            <br />
+            <p className="italic text-base text-white mb-4 leading-relaxed">Chanlang Prum - Founder, Gogreen Vegetarian</p>
             
           </div>
           <div className="order-1 md:order-2">
