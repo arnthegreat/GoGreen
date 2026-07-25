@@ -17,7 +17,7 @@ export function Navigation() {
   const navLinks = [
     { label: 'About', href: '#about' },
     { label: 'Our Story', href: '#founder' },
-    { label: 'Menu', href: '#menu' },
+    /*{ label: 'Menu', href: '#menu' },*/
     { label: 'Products', href: '#products' },
     { label: 'Benefits', href: '#benefits' }
   ];
@@ -48,7 +48,7 @@ export function Navigation() {
                 src={GoGreenLogo} 
                 alt="GoGreen Logo" 
                 className="w-15 h-15 object-contain"
-              />
+              />f
             </div>
             <div className="flex flex-col">
               <span className={`text-2xl font-black ${isScrolled ? 'text-gray-900' : 'text-white'} group-hover:text-green-600 transition-colors`}>

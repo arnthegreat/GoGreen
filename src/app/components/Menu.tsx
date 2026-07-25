@@ -1,4 +1,4 @@
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+/*import { ImageWithFallback } from "./figma/ImageWithFallback";
 import {
   Star,
   Flame,
@@ -93,11 +93,11 @@ export function Menu() {
       id="menu"
       className="relative py-24 bg-gradient-to-br from-slate-50 via-white to-emerald-50 overflow-hidden"
     >
-      {/* Background Decorations */}
+      {/* Background Decorations 
       <div className="absolute top-0 left-0 w-96 h-96 bg-green-200/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-200/30 rounded-full blur-3xl"></div>
 
-      {/* Floating Elements */}
+      {/* Floating Elements 
       <div className="absolute top-20 right-20 animate-pulse">
         <Sparkles className="w-8 h-8 text-green-400/40" />
       </div>
@@ -109,7 +109,7 @@ export function Menu() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Section Header
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-100 to-emerald-100 border border-green-200 px-6 py-3 rounded-full mb-6 shadow-lg">
             <Utensils className="w-5 h-5 text-green-600" />
@@ -137,7 +137,7 @@ export function Menu() {
           </p>
         </div>
 
-        {/* Menu Grid */}
+        {/* Menu Grid
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {signatureDishes.map((dish) => (
             <div
@@ -146,9 +146,9 @@ export function Menu() {
               onMouseEnter={() => setHoveredId(dish.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              {/* Image Container */}
+              {/* Image Container
               <div className="relative overflow-hidden h-72">
-                {/* Gradient Overlay */}
+                {/* Gradient Overlay
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 <ImageWithFallback
@@ -157,7 +157,7 @@ export function Menu() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
 
-                {/* Badges */}
+                {/* Badges
                 <div className="absolute top-4 left-4 right-4 flex justify-between items-start z-20">
                   {dish.popular && (
                     <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-4 py-2 rounded-full flex items-center gap-1.5 text-sm font-black shadow-xl transform group-hover:scale-110 transition-transform">
@@ -173,22 +173,22 @@ export function Menu() {
                   )}
                 </div>
 
-                {/* Price Badge */}
+                {/* Price Badge
                 <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-2xl z-20 transform group-hover:scale-110 transition-transform">
                   <div className="text-3xl font-black bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                     ${dish.price.toFixed(2)}
                   </div>
                 </div>
 
-                {/* Calories Badge */}
+                {/* Calories Badge
                 <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-bold z-20">
                   {dish.calories}
                 </div>
               </div>
 
-              {/* Content */}
+              {/* Content
               <div className="p-6 relative">
-                {/* Decorative Element */}
+                {/* Decorative Element 
                 <div className="absolute top-0 left-6 w-12 h-1 bg-gradient-to-r from-green-500 to-emerald-500 transform -translate-y-3"></div>
 
                 <h3 className="text-2xl font-black text-gray-900 mb-3 group-hover:text-green-600 transition-colors">
@@ -206,3 +206,5 @@ export function Menu() {
     </section>
   );
 }
+
+*/
