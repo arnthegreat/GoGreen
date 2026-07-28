@@ -1,6 +1,23 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Quote } from "lucide-react";
-import ChanlangPrumImage from "../assets/ChanlangPrum.jpg";
+import ChanlangPrumImage1 from "../assets/ChanlangPrum.jpg";
+import ChanlangPrumImage2 from "../assets/ChanlangPrum2.jpg";
+import ChanlangPrumImage3 from "../assets/ChanlangPrum3.jpg";
+
+const founderImages = [
+  {
+    src: ChanlangPrumImage1,
+    alt: "Chanlang Prum founder portrait 1",
+  },
+  {
+    src: ChanlangPrumImage2,
+    alt: "Chanlang Prum founder portrait 2",
+  },
+  {
+    src: ChanlangPrumImage3,
+    alt: "Chanlang Prum founder portrait 3",
+  },
+];
 
 export function Founder() {
   return (
@@ -61,7 +78,7 @@ export function Founder() {
             <p className="text-lg text-white mb-4 leading-relaxed">
               Only three months later, the COVID-19 pandemic impacted the entire world. During the same period, I was pregnant with my youngest child and faced severe pregnancy sickness, financial uncertainty, landlord disputes, my husband’s job loss and COVID-19 infection, as well as significant emotional and mental challenges.
             </p>
-            <p className="text-lg text-white mb-4leading-relaxed">
+            <p className="text-lg text-white mb-4 leading-relaxed">
               There were many moments when I considered closing the business.
             </p>
             <p className="text-lg text-white mb-4 leading-relaxed">
@@ -87,13 +104,16 @@ export function Founder() {
             
           </div>
           <div className="order-1 md:order-2">
-            <div className="relative">
-              <div className="absolute -inset-2 bg-gradient-to-r from-green-500 to-emerald-700 rounded-3xl blur-2xl opacity-70 animate-pulse"></div>
-              <img
-                src={ChanlangPrumImage}
-                alt="Chanlang Prum - Founder of GoGreen"
-                className="relative w-full h-[900px] object-cover rounded-2xl shadow-2xl"
-              />
+            <div className="grid grid-cols-1 gap-4">
+              {founderImages.map((image, index) => (
+                <div key={index} className="relative overflow-hidden rounded-2xl shadow-2xl">
+                  <ImageWithFallback
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-[600px] md:h-[680px] object-cover"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
