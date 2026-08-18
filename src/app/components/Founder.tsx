@@ -6,15 +6,15 @@ import ChanlangPrumImage3 from "../assets/ChanlangPrum3.jpg";
 
 const founderImages = [
   {
-    src: ChanlangPrumImage1,
+    src: ChanlangPrumImage3,
     alt: "Chanlang Prum founder portrait 1",
   },
   {
-    src: ChanlangPrumImage2,
+    src: ChanlangPrumImage1,
     alt: "Chanlang Prum founder portrait 2",
   },
   {
-    src: ChanlangPrumImage3,
+    src: ChanlangPrumImage2,
     alt: "Chanlang Prum founder portrait 3",
   },
 ];
