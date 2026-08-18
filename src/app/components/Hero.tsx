@@ -6,7 +6,7 @@ import {
   Sparkles,
   Award,
 } from "lucide-react";
-import DeepFriedVeganFish from "../assets/DeepFriedVeganFish.png";
+import Products from "../assets/Products.jpg";
 
 export function Hero() {
   const scrollToMenu = () => {
@@ -57,9 +57,10 @@ export function Hero() {
               <br />
               <span className="text-white">Vegetarian</span>
               <br />
+              {/*
               <span className="bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 bg-clip-text text-transparent">
                 Restaurant
-              </span>
+              </span>*/}
             </h1>
           </div>
 
@@ -68,9 +69,7 @@ export function Hero() {
           </p>
 
           <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
-            Experience the vibrant tastes of Cambodia through
-            our plant-based culinary journey. Fresh, wholesome,
-            and absolutely delicious!
+            Bring the vibrant taste of Cambodia into your everyday life with our authentic vegetarian products. Fresh, wholesome, and 100% plant-based!
           </p>
 
           {/* CTA Buttons */}
@@ -100,7 +99,7 @@ export function Hero() {
             <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-2 shadow-2xl">
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src={DeepFriedVeganFish}
+                  src={Products}
                   alt="Fresh Bowl"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                 />
@@ -132,9 +131,9 @@ export function Hero() {
                 Most Popular
               </span>
             </div>
-            <div className="text-white/90 text-xs sm:text-sm mt-">
+            {/*<div className="text-white/90 text-xs sm:text-sm mt-">
               Fresh Daily
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>
