@@ -1,4 +1,5 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import Products2 from "../assets/Products2.jpg";
 import {
   Sprout,
   Heart,
@@ -52,8 +53,8 @@ export function About() {
               <div className="absolute -inset-4 bg-gradient-to-r from-green-400 to-emerald-500 rounded-3xl blur-2xl opacity-25 group-hover:opacity-40 transition-opacity"></div>
               <div className="relative bg-white p-3 rounded-3xl shadow-2xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1706670663016-777de9e62d17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYW1ib2RpYSUyMHBobm9tJTIwcGVuaCUyMGNpdHl8ZW58MXx8fHwxNzczMzI3NDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Phnom Penh Cambodia"
+                  src={Products2}
+                  alt="GoGreen products"
                   className="w-full h-[500px] object-cover rounded-2xl"
                 />
               </div>
