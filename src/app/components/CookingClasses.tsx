@@ -1,88 +1,73 @@
-import { BookOpen, Sparkles, CalendarDays } from "lucide-react";
+import { BookOpen, CalendarDays, Sparkles } from 'lucide-react';
 
 export function CookingClasses() {
   return (
-    <section
-      id="cooking-classes"
-      className="py-20 bg-gradient-to-br from-white via-emerald-50 to-teal-50"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <p className="inline-flex items-center justify-center gap-2 rounded-full bg-green-500/10 px-5 py-2 text-sm font-semibold text-emerald-700 shadow-sm ring-1 ring-green-200">
-            <Sparkles className="w-5 h-5" />
-            New: Founder-led cooking classes
-          </p>
-          <h2 className="mt-6 text-4xl md:text-5xl font-bold text-emerald-950">
-            Learn to cook with Chanlang
-          </h2>
-          <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            Join our founder for hands-on vegetarian cooking classes that bring
-            Cambodian flavors home. Discover techniques, recipes, and kitchen
-            confidence in every session.
+    <section id="cooking-classes" className="bg-[#f3f8f2] py-20 md:py-28">
+      <div className="section-shell">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="eyebrow">
+            Founder-led cooking classes
+          </span>
+          <h2 className="mt-6 section-title">Learn to cook with Chanlang</h2>
+          <p className="mt-5 section-subtitle mx-auto">
+            Join our founder for hands-on vegetarian cooking sessions that turn Cambodian flavors into confident home cooking.
           </p>
         </div>
 
-        <div className="grid gap-10 lg:grid-cols-2 items-center">
+        <div className="mt-12 grid items-stretch gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="space-y-6">
-            <div className="rounded-3xl bg-white shadow-2xl shadow-emerald-200/30 p-8 border border-emerald-100">
-              <div className="flex items-center gap-4 mb-4 text-emerald-800">
-                <BookOpen className="w-8 h-8" />
+            <div className="soft-card p-7 md:p-8">
+              <div className="mb-4 flex items-start gap-4 text-emerald-800">
+                <div className="rounded-2xl bg-emerald-100 p-3">
+                  <BookOpen className="h-6 w-6" />
+                </div>
                 <div>
-                  <h3 className="text-xl font-semibold">What you'll learn</h3>
-                  <p className="text-sm text-gray-500">
-                    Plant-based Cambodian dishes, flavor building, and plating tips.
-                  </p>
+                  <h3 className="text-xl font-semibold text-slate-900">What you’ll learn</h3>
+                  <p className="mt-1 text-sm text-slate-500">Plant-based Cambodian dishes, flavor building, and plating tips.</p>
                 </div>
               </div>
-              <ul className="space-y-3 text-gray-700">
-                <li>• Fresh recipe walkthroughs from our founder</li>
-                <li>• Small groups for a personal experience</li>
-                <li>• Tips for cooking at home with seasonal ingredients</li>
+              <ul className="space-y-3 text-slate-700">
+                <li className="flex items-start gap-3"><span className="mt-2 h-2 w-2 rounded-full bg-emerald-500" />Fresh recipe walkthroughs from our founder</li>
+                <li className="flex items-start gap-3"><span className="mt-2 h-2 w-2 rounded-full bg-emerald-500" />Small groups for a personal, immersive experience</li>
+                <li className="flex items-start gap-3"><span className="mt-2 h-2 w-2 rounded-full bg-emerald-500" />Practical techniques for cooking at home with seasonal ingredients</li>
               </ul>
             </div>
 
-            <div className="rounded-3xl bg-white shadow-2xl shadow-emerald-200/30 p-8 border border-emerald-100">
-              <div className="flex items-center gap-4 mb-4 text-emerald-800">
-                <CalendarDays className="w-8 h-8" />
+            <div className="soft-card p-7 md:p-8">
+              <div className="mb-4 flex items-start gap-4 text-emerald-800">
+                <div className="rounded-2xl bg-emerald-100 p-3">
+                  <CalendarDays className="h-6 w-6" />
+                </div>
                 <div>
-                  <h3 className="text-xl font-semibold">Next sessions</h3>
-                  <p className="text-sm text-gray-500">
-                    Weekly classes with a new recipe each month and seasonal menu updates.
-                  </p>
+                  <h3 className="text-xl font-semibold text-slate-900">Next sessions</h3>
+                  <p className="mt-1 text-sm text-slate-500">Weekly classes featuring seasonal ingredients and new recipes.</p>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed">
-                Reserve your spot to cook alongside Chanlang and learn how to make
-                delicious plant-based meals, perfect for home or special occasions.
+              <p className="text-slate-600 leading-7">
+                Reserve your place to cook alongside Chanlang and learn how to create delicious plant-based meals for home life and special occasions.
               </p>
             </div>
           </div>
 
-          <div className="rounded-[2rem] overflow-hidden bg-emerald-950 text-white shadow-2xl shadow-emerald-300/20">
-            <div className="bg-gradient-to-br from-emerald-700 to-teal-600 px-8 py-10">
-              <p className="text-sm uppercase tracking-[0.35em] text-emerald-200">
-                Founder Cooking Class</p>
-              <h3 className="mt-4 text-3xl font-bold">Cook with Chanlang</h3>
-              <p className="mt-4 text-base text-emerald-100 leading-relaxed">
-                Join a limited-seat workshop where the founder teaches signature
-                Cambodian vegetarian recipes, kitchen shortcuts, and the stories
-                behind each dish.
+          <div className="overflow-hidden rounded-[2rem] bg-[#10392d] text-white shadow-[0_24px_60px_rgba(16,57,45,0.18)]">
+            <div className="bg-gradient-to-br from-[#1d5a42] to-[#2c7b58] px-8 py-10 md:px-10 md:py-12">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-emerald-100">Founder cooking class</p>
+              <h3 className="mt-4 text-3xl font-semibold tracking-[-0.05em] md:text-4xl">Cook with Chanlang</h3>
+              <p className="mt-4 max-w-lg text-base leading-7 text-emerald-50/90">
+                Join a limited-seat workshop where the founder teaches signature Cambodian vegetarian recipes, kitchen shortcuts, and the stories behind each dish.
               </p>
             </div>
-            <div className="px-8 py-8 bg-emerald-950">
-              <div className="rounded-3xl bg-white/10 p-6 border border-white/10">
-                <p className="text-sm uppercase tracking-[0.2em] text-emerald-200">
-                  Class highlights</p>
-                <ol className="mt-4 space-y-3 text-sm text-emerald-100 leading-relaxed">
+
+            <div className="bg-[#10392d] px-8 py-8 md:px-10 md:py-10">
+              <div className="rounded-[1.6rem] border border-white/10 bg-white/5 p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-emerald-100">Class highlights</p>
+                <ol className="mt-5 space-y-4 text-sm leading-6 text-emerald-50/90">
                   <li>1. Fresh ingredients and plant-based techniques</li>
                   <li>2. Cambodian staple recipes made easy</li>
                   <li>3. Personalized guidance from the founder</li>
                 </ol>
               </div>
-              <button
-                type="button"
-                className="mt-8 w-full rounded-3xl bg-white px-6 py-4 text-sm font-bold uppercase tracking-[0.08em] text-emerald-950 shadow-xl transition hover:-translate-y-0.5 hover:bg-emerald-100"
-              >
+              <button type="button" className="mt-8 w-full rounded-full bg-white px-6 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#10392d] transition hover:bg-emerald-50">
                 Reserve a spot
               </button>
             </div>

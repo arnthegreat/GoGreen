@@ -1,131 +1,101 @@
-import { Phone, Mail, MapPin, Clock, ShoppingCart, Sparkles } from 'lucide-react';
+import { Clock, Mail, MapPin, Phone, ShoppingCart, Sparkles } from 'lucide-react';
 
 export function Order() {
-  const scrollToMenu = () => {
-    document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToProducts = () => {
+    document.getElementById('products')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
-    <section id="order" className="py-20 bg-gradient-to-br from-green-50 to-emerald-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Get in Touch
-          </h2>
-          <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Visit us, call us, or order online - we're here to serve you!
+    <section id="order" className="bg-[#edf5ee] py-20 md:py-28">
+      <div className="section-shell">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="eyebrow">Get in touch</span>
+          <h2 className="mt-6 section-title">Visit, call, or order with ease.</h2>
+          <p className="mt-5 section-subtitle mx-auto">
+            Enjoy fresh, flavorful vegetarian meals in person or from the comfort of home.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Order Online CTA */}
-          <div className="bg-gradient-to-br from-green-600 to-emerald-600 rounded-2xl shadow-xl p-8 lg:p-12 text-white flex flex-col justify-center">
-            <Sparkles className="w-16 h-16 mb-6" />
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Order Online Now!
-            </h3>
-            <p className="text-lg mb-6 opacity-90 leading-relaxed">
-              Browse our delicious menu, add your favorite dishes to cart, and choose between delivery or pickup. 
-              It's quick, easy, and convenient!
+        <div className="mt-12 grid gap-8 lg:grid-cols-[1.02fr_0.98fr]">
+          <div className="overflow-hidden rounded-[2rem] bg-[#1d5a42] p-7 text-white shadow-[0_24px_60px_rgba(29,90,66,0.18)] md:p-10">
+            <Sparkles className="h-12 w-12 text-emerald-200" />
+            <h3 className="mt-6 text-3xl font-semibold tracking-[-0.05em] md:text-4xl">Order online now.</h3>
+            <p className="mt-4 max-w-xl text-base leading-7 text-emerald-50/90 md:text-lg">
+              Browse our delicious menu, add favorites to your cart, and choose delivery or pickup in just a few steps.
             </p>
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="bg-white/20 p-2 rounded-lg">
-                  <ShoppingCart className="w-6 h-6" />
+
+            <div className="mt-8 space-y-4 text-base md:text-lg">
+              {[
+                'Add items to your cart',
+                'Choose delivery or pickup',
+                'Enjoy fresh, healthy food'
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3">
+                  <div className="rounded-xl bg-white/10 p-2.5">
+                    <ShoppingCart className="h-5 w-5" />
+                  </div>
+                  <span>{item}</span>
                 </div>
-                <span className="text-lg">Add items to your cart</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="bg-white/20 p-2 rounded-lg">
-                  <MapPin className="w-6 h-6" />
-                </div>
-                <span className="text-lg">Choose delivery or pickup</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="bg-white/20 p-2 rounded-lg">
-                  <Sparkles className="w-6 h-6" />
-                </div>
-                <span className="text-lg">Enjoy fresh, healthy food!</span>
-              </div>
+              ))}
             </div>
-            <button
-              onClick={scrollToMenu}
-              className="mt-8 bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
-            >
-              Browse Menu & Order
+
+            <button type="button" onClick={scrollToProducts} className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-[#1d5a42] transition hover:bg-emerald-50">
+              Browse products & order
             </button>
           </div>
 
-          {/* Contact & Location Info */}
           <div className="space-y-6">
-            {/* Quick Contact */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h3>
-              <div className="space-y-4">
+            <div className="soft-card p-7 md:p-8">
+              <h3 className="text-2xl font-semibold tracking-[-0.04em] text-slate-900">Quick contact</h3>
+              <div className="mt-6 space-y-5">
                 <div className="flex items-start gap-4">
-                  <Phone className="w-6 h-6 text-green-600 mt-1" />
+                  <div className="rounded-xl bg-emerald-50 p-2.5 text-emerald-700"><Phone className="h-5 w-5" /></div>
                   <div>
-                    <p className="font-semibold text-gray-900">Phone</p>
-                    <p className="text-gray-600">+855 23 123 456</p>
-                    <p className="text-gray-600">+855 12 345 678</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">Phone</p>
+                    <p className="mt-1 text-base text-slate-700">+855 23 123 456</p>
+                    <p className="text-base text-slate-700">+855 12 345 678</p>
                   </div>
                 </div>
+
                 <div className="flex items-start gap-4">
-                  <Mail className="w-6 h-6 text-green-600 mt-1" />
+                  <div className="rounded-xl bg-emerald-50 p-2.5 text-emerald-700"><Mail className="h-5 w-5" /></div>
                   <div>
-                    <p className="font-semibold text-gray-900">Email</p>
-                    <p className="text-gray-600">info@gogreen.com.kh</p>
-                    <p className="text-gray-600">orders@gogreen.com.kh</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">Email</p>
+                    <p className="mt-1 text-base text-slate-700">info@gogreen.com.kh</p>
+                    <p className="text-base text-slate-700">orders@gogreen.com.kh</p>
                   </div>
                 </div>
+
                 <div className="flex items-start gap-4">
-                  <Clock className="w-6 h-6 text-green-600 mt-1" />
+                  <div className="rounded-xl bg-emerald-50 p-2.5 text-emerald-700"><Clock className="h-5 w-5" /></div>
                   <div>
-                    <p className="font-semibold text-gray-900">Opening Hours</p>
-                    <p className="text-gray-600">Mon - Fri: 10:00 AM - 9:00 PM</p>
-                    <p className="text-gray-600">Sat - Sun: 9:00 AM - 10:00 PM</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">Opening hours</p>
+                    <p className="mt-1 text-base text-slate-700">Mon - Fri: 10:00 AM - 9:00 PM</p>
+                    <p className="text-base text-slate-700">Sat - Sun: 9:00 AM - 10:00 PM</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Locations */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Locations</h3>
-              <div className="space-y-6">
-                <div className="border-l-4 border-green-600 pl-4">
-                  <div className="flex items-start gap-2 mb-2">
-                    <MapPin className="w-5 h-5 text-green-600 mt-1" />
-                    <div>
-                      <p className="font-bold text-gray-900">Main Branch - BKK1</p>
-                      <p className="text-gray-600">Street 302, Sangkat Boeng Keng Kang 1</p>
-                      <p className="text-gray-600">Phnom Penh, Cambodia</p>
+            <div className="soft-card p-7 md:p-8">
+              <h3 className="text-2xl font-semibold tracking-[-0.04em] text-slate-900">Our locations</h3>
+              <div className="mt-6 space-y-5">
+                {[
+                  ['Main Branch - BKK1', 'Street 302, Sangkat Boeng Keng Kang 1', 'Phnom Penh, Cambodia'],
+                  ['Riverside Branch', 'Sisowath Quay, Riverside Area', 'Phnom Penh, Cambodia'],
+                  ['Toul Kork Branch', 'Street 289, Boeung Kak Ti Muoy', 'Phnom Penh, Cambodia']
+                ].map(([title, line1, line2]) => (
+                  <div key={title} className="border-l-2 border-emerald-500 pl-4">
+                    <div className="flex items-start gap-3">
+                      <MapPin className="mt-1 h-5 w-5 text-emerald-700" />
+                      <div>
+                        <p className="text-base font-semibold text-slate-900">{title}</p>
+                        <p className="text-sm text-slate-600">{line1}</p>
+                        <p className="text-sm text-slate-600">{line2}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div className="border-l-4 border-green-600 pl-4">
-                  <div className="flex items-start gap-2 mb-2">
-                    <MapPin className="w-5 h-5 text-green-600 mt-1" />
-                    <div>
-                      <p className="font-bold text-gray-900">Riverside Branch</p>
-                      <p className="text-gray-600">Sisowath Quay, Riverside Area</p>
-                      <p className="text-gray-600">Phnom Penh, Cambodia</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="border-l-4 border-green-600 pl-4">
-                  <div className="flex items-start gap-2 mb-2">
-                    <MapPin className="w-5 h-5 text-green-600 mt-1" />
-                    <div>
-                      <p className="font-bold text-gray-900">Toul Kork Branch</p>
-                      <p className="text-gray-600">Street 289, Boeung Kak Ti Muoy</p>
-                      <p className="text-gray-600">Phnom Penh, Cambodia</p>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

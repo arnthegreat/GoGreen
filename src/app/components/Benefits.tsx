@@ -1,88 +1,85 @@
-import { Heart, Leaf, Users, Sparkles, ShieldCheck, TrendingUp } from 'lucide-react';
+import { Heart, Leaf, ShieldCheck, Sparkles, TrendingUp, Users } from 'lucide-react';
 
 const benefits = [
   {
     icon: Heart,
-    title: 'Better Health',
-    description: 'Nutrient-rich, plant-based meals that support your overall wellness and vitality',
-    color: 'text-red-500'
+    title: 'Better health',
+    description: 'Nutrient-rich plant-based meals that support wellness, energy, and everyday vitality.',
+    accent: 'bg-red-50 text-red-600'
   },
   {
     icon: Leaf,
-    title: 'Eco-Friendly',
-    description: 'Sustainable practices that reduce environmental impact and support local farmers',
-    color: 'text-green-500'
+    title: 'Eco-friendly',
+    description: 'A more sustainable way to eat that supports local ingredients and a lighter footprint.',
+    accent: 'bg-emerald-50 text-emerald-600'
   },
   {
     icon: Users,
-    title: 'Community First',
-    description: 'Supporting local communities and creating a positive social impact',
-    color: 'text-blue-500'
+    title: 'Community first',
+    description: 'We support local producers, growers, and a food culture centered on care and connection.',
+    accent: 'bg-sky-50 text-sky-600'
   },
   {
     icon: Sparkles,
-    title: 'Fresh & Organic',
-    description: 'Daily sourced organic ingredients, ensuring maximum flavor and nutrition',
-    color: 'text-yellow-500'
+    title: 'Fresh & organic',
+    description: 'Daily-sourced ingredients and thoughtful preparation bring exceptional flavor and nutrition.',
+    accent: 'bg-amber-50 text-amber-600'
   },
   {
     icon: ShieldCheck,
-    title: 'Quality Guaranteed',
-    description: 'Strict quality control and hygiene standards in every dish we prepare',
-    color: 'text-purple-500'
+    title: 'Quality assured',
+    description: 'Strict quality control and hygiene standards ensure confidence in every dish we prepare.',
+    accent: 'bg-violet-50 text-violet-600'
   },
   {
     icon: TrendingUp,
-    title: 'Energy Boost',
-    description: 'Plant-based nutrition that keeps you energized and focused throughout the day',
-    color: 'text-orange-500'
+    title: 'Energy boost',
+    description: 'Wholesome nutrition helps you feel lighter, more energized, and ready for the day ahead.',
+    accent: 'bg-orange-50 text-orange-600'
   }
 ];
 
 export function Benefits() {
   return (
-    <section id="benefits" className="py-20 bg-gradient-to-br from-gray-50 to-green-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Why Choose GoGreen?
-          </h2>
-          <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover the amazing benefits of choosing plant-based dining with us
+    <section id="benefits" className="bg-[#f2f7f1] py-20 md:py-28">
+      <div className="section-shell">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="eyebrow">Why choose us</span>
+          <h2 className="mt-6 section-title">A better way to eat, every day.</h2>
+          <p className="mt-5 section-subtitle mx-auto">
+            Discover the practical benefits of a plant-based lifestyle that tastes as good as it feels.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => {
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {benefits.map((benefit) => {
             const Icon = benefit.icon;
             return (
               <div
-                key={index}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
+                key={benefit.title}
+                className="soft-card group p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_20px_44px_rgba(16,61,45,0.1)]"
               >
-                <div className={`${benefit.color} mb-4 transform group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-12 h-12" />
+                <div className={`mb-5 inline-flex rounded-2xl p-3 ${benefit.accent}`}>
+                  <Icon className="h-7 w-7" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                <h3 className="text-2xl font-semibold tracking-[-0.04em] text-slate-900">{benefit.title}</h3>
+                <p className="mt-3 text-base leading-7 text-slate-600">{benefit.description}</p>
               </div>
             );
           })}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 md:p-12 text-center text-white shadow-2xl">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">
-            Join the Green Movement Today!
-          </h3>
-          <p className="text-xl mb-6 max-w-3xl mx-auto opacity-90">
-            Experience the perfect blend of taste, health, and sustainability. Your body and the planet will thank you!
+        <div className="mt-14 rounded-[2rem] bg-[#1d5a42] px-6 py-8 text-center text-white shadow-[0_22px_54px_rgba(29,90,66,0.22)] md:px-10 md:py-12">
+          <h3 className="text-3xl font-semibold tracking-[-0.05em] md:text-5xl">Join the movement today.</h3>
+          <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-emerald-50/90 md:text-lg">
+            Experience the perfect balance of taste, health, and sustainability. Your body and the planet will thank you.
           </p>
           <button
-            onClick={() => document.getElementById('order')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
+            type="button"
+            onClick={() => document.getElementById('order')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#1d5a42] transition hover:bg-emerald-50"
           >
-            Start Your Journey
+            Start your journey
           </button>
         </div>
       </div>

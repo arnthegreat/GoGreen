@@ -1,127 +1,71 @@
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import Products2 from "../assets/Products2.jpg";
-import {
-  Sprout,
-  Heart,
-  Award,
-  Sparkles,
-  TrendingUp,
-  Users,
-} from "lucide-react";
+import { ArrowRight, Leaf, Sparkles } from 'lucide-react';
+import { ImageWithFallback } from './figma/ImageWithFallback';
+import Products2 from '../assets/Products2.jpg';
 
 export function About() {
+  const scrollToProducts = () => {
+    document.getElementById('products')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
-    <section
-      id="about"
-      className="relative py-24 bg-gradient-to-br from-emerald-950 via-green-900 to-teal-950 overflow-hidden"
-    >
-      {/* Background Elements 
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-green-200/20 to-emerald-200/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-teal-200/20 to-green-200/20 rounded-full blur-3xl"></div>*/}
-
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-100 to-emerald-100 border border-green-200 px-6 py-3 rounded-full mb-6 shadow-lg">
-            {/*<Sparkles className="w-5 h-5 text-green-600" />*/}
-            <span className="text-green-800 font-bold text-sm uppercase tracking-wider">
-              About Us
-            </span>
-          </div>
-
-          <h2 className="text-5xl md:text-7xl font-black text-white mb-6">
-            About{" "}  
-            <span className="bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200 bg-clip-text text-transparent">
-              GoGreen
-            </span>
+    <section id="about" className="py-20 md:py-28">
+      <div className="section-shell">
+        <div className="mb-12 text-center md:mb-16">
+          <span className="eyebrow">About us</span>
+          <h2 className="mt-6 section-title">
+            A greener way to enjoy Phnom Penh.
           </h2>
-          <div className="w-24 h-1 bg-green-400 rounded-full mx-auto"></div>
-{/*
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="h-1 w-24 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full"></div>
-            <Heart className="w-5 h-5 text-red-500 fill-red-500 animate-pulse" />
-            <div className="h-1 w-24 bg-gradient-to-r from-transparent via-green-500 to-transparent rounded-full"></div>
-          </div>
-*/}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          {/* Image Side */}
-          <div className="relative">
-            {/* Main Image */}
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-green-400 to-emerald-500 rounded-3xl blur-2xl opacity-25 group-hover:opacity-40 transition-opacity"></div>
-              <div className="relative bg-white p-3 rounded-3xl shadow-2xl">
-                <ImageWithFallback
-                  src={Products2}
-                  alt="GoGreen products"
-                  className="w-full h-[500px] object-cover rounded-2xl"
-                />
-              </div>
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div className="soft-card overflow-hidden p-3">
+            <div className="overflow-hidden rounded-[1.4rem]">
+              <ImageWithFallback
+                src={Products2}
+                alt="GoGreen products and fresh ingredients"
+                className="h-[420px] w-full object-cover md:h-[540px]"
+              />
             </div>
           </div>
 
-          {/* Content Side */}
-          <div className="space-y-6">
-            <h3 className="text-4xl md:text-5xl font-black text-white leading-tight">
-              A Green Revolution in{" "}
-              <span className="bg-gradient-to-r from-green-200 to-emerald-200 bg-clip-text text-transparent">
-                Phnom Penh
-              </span>
-            </h3>
+          <div className="space-y-7">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-700">
+                Our mission
+              </p>
+              <h3 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-slate-900 md:text-5xl">
+                Plant-based cuisine with heart.
+              </h3>
+            </div>
 
-            <p className="text-xl text-white leading-relaxed">
-              Established in the heart of Phnom Penh, GoGreen
-              Vegetarian Restaurant is more than just a dining
-              destination—it's a movement towards healthier,
-              more sustainable living. We believe that
-              plant-based cuisine can be both nutritious and
-              incredibly delicious.
+            <p className="text-lg leading-8 text-slate-600">
+              Established in the heart of Phnom Penh, GoGreen Vegetarian Restaurant is more than a dining spot—it is a movement toward healthier, more sustainable living.
             </p>
 
-            <p className="text-lg text-white leading-relaxed">
-              Our mission is to transform the way Cambodia
-              thinks about vegetarian food by offering
-              authentic, flavorful dishes that celebrate local
-              ingredients and traditional cooking methods, all
-              while being completely plant-based.
+            <p className="text-lg leading-8 text-slate-600">
+              We believe plant-based cuisine can be both deeply nourishing and incredibly delicious, celebrating local ingredients and traditional Cambodian flavors in a modern, accessible way.
             </p>
 
-            {/* Feature Grid 
-            <div className="grid grid-cols-2 gap-4 pt-8">
-              <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-2xl p-6 text-center hover:scale-105 transition-transform cursor-pointer">
-                <div className="bg-white rounded-xl p-3 inline-block mb-3 shadow-md">
-                  <Sprout className="w-8 h-8 text-green-600" />
+            <div className="grid gap-4 sm:grid-cols-3">
+              {[
+                ['Plant-based', '100% vegetarian recipes'],
+                ['Local', 'Cambodian ingredients'],
+                ['Purposeful', 'Health + sustainability']
+              ].map(([title, description]) => (
+                <div key={title} className="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-4">
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white text-emerald-700 shadow-sm">
+                    {title === 'Plant-based' ? <Leaf className="h-5 w-5" /> : <Sparkles className="h-5 w-5" />}
+                  </div>
+                  <div className="text-sm font-semibold text-slate-900">{title}</div>
+                  <div className="mt-1 text-xs leading-5 text-slate-600">{description}</div>
                 </div>
-                <p className="font-black text-gray-900 text-sm">
-                  100% Plant-Based
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-red-50 to-pink-50 border-2 border-red-200 rounded-2xl p-6 text-center hover:scale-105 transition-transform cursor-pointer">
-                <div className="bg-white rounded-xl p-3 inline-block mb-3 shadow-md">
-                  <Heart className="w-8 h-8 text-red-500" />
-                </div>
-                <p className="font-black text-gray-900 text-sm">
-                  Made with Love
-                </p>
-              </div>
+              ))}
             </div>
-            */}
 
-            {/* CTA Button */}
-            <div className="pt-6">
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("menu")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="group bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 hover:from-green-600 hover:via-emerald-600 hover:to-teal-600 text-white px-8 py-4 rounded-2xl font-black text-lg transition-all transform hover:scale-105 shadow-2xl hover:shadow-green-500/50 inline-flex items-center gap-3"
-              >
-                <span>Explore Our Menu</span>
-              </button>
-            </div>
+            <button type="button" onClick={scrollToProducts} className="btn-primary mt-2">
+              Explore our products
+              <ArrowRight className="h-4 w-4" />
+            </button>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ export function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-xl shadow-2xl py-3 border-b border-gray-100' 
+          ? 'bg-white/95 backdrop-blur-xl shadow-2xl py-3 border-gray-100' 
           : 'bg-transparent py-6'
       }`}
     >
@@ -51,11 +51,11 @@ export function Navigation() {
               />
             </div>
             <div className="flex flex-col">
-              <span className={`text-2xl font-black ${isScrolled ? 'text-gray-900' : 'text-white'} group-hover:text-green-600 transition-colors`}>
+              <span className={`text-2xl font-black ${isScrolled ? 'text-gray-900' : 'text-gray-700'} group-hover:text-green-600 transition-colors`}>
                 GoGreen
               </span>
               <span className={`text-xs font-bold ${isScrolled ? 'text-green-600' : 'text-green-300'} -mt-1`}>
-                Vegetarian
+                Vegetarian 
               </span>
             </div>
           </button>
@@ -69,7 +69,7 @@ export function Navigation() {
                 className={`relative px-4 py-2 font-bold transition-all duration-300 rounded-xl group ${
                   isScrolled 
                     ? 'text-gray-700 hover:text-green-600 hover:bg-green-50' 
-                    : 'text-white hover:text-green-300 hover:bg-white/10'
+                    : 'text-gray-700 hover:text-green-300 hover:bg-white/10'
                 }`}
               >
                 {link.label}

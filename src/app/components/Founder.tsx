@@ -110,7 +110,7 @@ export function Founder() {
                   <ImageWithFallback
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-[600px] md:h-[680px] object-cover"
+                    className="w-full h-[600px] md:h-[850px] object-cover"
                   />
                 </div>
               ))}

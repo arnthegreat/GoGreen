@@ -1,152 +1,82 @@
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import {
-  Leaf,
-  ArrowRight,
-  Star,
-  Sparkles,
-  Award,
-} from "lucide-react";
-import Products from "../assets/Products.jpg";
+import { ArrowRight, Leaf, Star } from 'lucide-react';
+import Products from '../assets/Products.jpg';
 
 export function Hero() {
-  const scrollToMenu = () => {
-    document
-      .getElementById("products")
-      ?.scrollIntoView({ behavior: "smooth" });
+  const scrollToProducts = () => {
+    document.getElementById('products')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-950 via-green-900 to-teal-950">
-      {/* Animated Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 2px, transparent 0)`,
-            backgroundSize: "50px 50px",
-          }}
-        ></div>
-      </div>
+    <section className="relative isolate overflow-hidden bg-[#eef5ee] pt-28 pb-20 sm:pt-32 lg:pb-24">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(34,120,87,0.12),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(131,168,126,0.18),transparent_30%)]" />
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-32 bg-gradient-to-t from-[#e9f2e8] to-transparent" />
 
-      {/* Floating Elements */}
-      {/*<div className="absolute top-20 left-10 w-72 h-72 bg-green-500/20 rounded-full blur-3xl animate-pulse"></div>
-      <div
-        className="absolute bottom-20 right-10 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl animate-pulse"
-        style={{ animationDelay: "1s" }}
-      ></div>
-      <div
-        className="absolute top-1/2 left-1/4 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl animate-pulse"
-        style={{ animationDelay: "2s" }}
-      ></div>*/}
+      <div className="section-shell grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        <div className="max-w-xl">
+          <span className="eyebrow">
+            <Leaf className="h-3.5 w-3.5" />
+            Fresh • Healthy • Delicious
+          </span>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 grid lg:grid-cols-2 gap-16 items-center">
-        {/* Left Content */}
-        <div className="space-y-8 text-white">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 backdrop-blur-xl border border-green-400/30 px-5 py-2.5 rounded-full shadow-2xl">
-            <span className="text-green-300 font-bold text-sm">
-              Fresh • Healthy • Delicious
+          <h1 className="mt-6 text-5xl font-black tracking-[-0.06em] text-slate-900 sm:text-6xl lg:text-7xl">
+            GoGreen
+            <span className="mt-1 block text-2xl font-semibold text-emerald-700 sm:text-3xl lg:text-4xl">
+              Vegetarian
             </span>
-          </div>
+          </h1>
 
-          <div>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-white via-green-100 to-emerald-200 bg-clip-text text-transparent">
-                GoGreen
-              </span>
-              <br />
-              <span className="text-white">Vegetarian</span>
-              <br />
-              {/*
-              <span className="bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                Restaurant
-              </span>*/}
-            </h1>
-          </div>
-
-          <p className="text-3xl md:text-4xl font-bold text-green-300 leading-tight">
-            Where Health Meets Flavor
+          <p className="mt-6 text-2xl font-semibold text-emerald-800 sm:text-3xl">
+            Where health meets flavor.
           </p>
 
-          <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
-            Bring the vibrant taste of Cambodia into your everyday life with our authentic vegetarian products. Fresh, wholesome, and 100% plant-based!
+          <p className="mt-5 max-w-lg text-lg leading-8 text-slate-600">
+            Bring the vibrant taste of Cambodia into your everyday life with authentic vegetarian products that are fresh, wholesome, and deeply satisfying.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button
-              onClick={scrollToMenu}
-              className="group relative bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 hover:from-green-600 hover:via-emerald-600 hover:to-teal-600 text-white px-10 py-5 rounded-2xl text-lg font-black flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl hover:shadow-green-500/50"
-            >
-              <span>Order Now</span>
-              <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-              <div className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <button type="button" onClick={scrollToProducts} className="btn-primary">
+              Order now
+              <ArrowRight className="h-4 w-4" />
             </button>
-            <button
-              onClick={scrollToMenu}
-              className="group relative bg-white/10 backdrop-blur-xl hover:bg-white/20 text-white px-10 py-5 rounded-2xl text-lg font-black border-2 border-white/30 hover:border-white/50 transition-all shadow-xl"
-            >
-              View Products
+            <button type="button" onClick={scrollToProducts} className="btn-secondary">
+              View products
             </button>
+          </div>
+
+          <div className="mt-8 flex flex-wrap gap-3 text-sm text-slate-600">
+            <span className="rounded-full border border-emerald-200 bg-white px-3 py-2 shadow-sm">100% plant-based</span>
+            <span className="rounded-full border border-emerald-200 bg-white px-3 py-2 shadow-sm">Locally inspired</span>
+            <span className="rounded-full border border-emerald-200 bg-white px-3 py-2 shadow-sm">Made with care</span>
           </div>
         </div>
 
-        {/* Right Content - Food Showcase */}
-        <div className="relative">
-          {/* Main Featured Image */}
-          <div className="relative">
-            <div className="absolute -inset-2 bg-gradient-to-r from-green-500 to-emerald-700 rounded-3xl blur-2xl opacity-70 animate-pulse"></div>
-            <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-2 shadow-2xl">
-              <div className="rounded-2xl overflow-hidden">
-                <img
-                  src={Products}
-                  alt="Fresh Bowl"
-                  className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
-                />
-              </div>
+        <div className="relative mx-auto w-full max-w-[560px]">
+          <div className="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-emerald-200 via-emerald-100 to-lime-100 blur-2xl" />
+          <div className="soft-card relative overflow-hidden p-3">
+            <div className="overflow-hidden rounded-[1.5rem]">
+              <img src={Products} alt="Fresh GoGreen bowls and ingredients" className="h-[420px] w-full object-cover sm:h-[500px]" />
             </div>
           </div>
 
-          {/* Floating Cards */}
-          <div className="absolute -bottom-5 -left-2 sm:-bottom-8 sm:-left-8 bg-white rounded-2xl shadow-2xl p-3 sm:p-4 max-w-[14rem] sm:max-w-xs transform hover:scale-105 transition-transform">
+          <div className="absolute -bottom-5 left-4 rounded-2xl border border-emerald-100 bg-white p-4 shadow-[0_18px_35px_rgba(16,61,45,0.12)] sm:left-[-1.5rem]">
             <div className="flex items-center gap-3">
-              <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-3 rounded-xl">
-                <Leaf className="w-6 h-6 text-white" />
+              <div className="rounded-xl bg-emerald-600 p-2.5 text-white">
+                <Leaf className="h-5 w-5" />
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-black text-gray-900">
-                  100%
-                </div>
-                <div className="text-xs sm:text-sm text-gray-600 font-semibold">
-                  Plant-Based
-                </div>
+                <div className="text-xl font-black text-slate-900">100%</div>
+                <div className="text-xs font-medium text-slate-600">Plant-based</div>
               </div>
             </div>
           </div>
 
-          <div className="absolute -top-5 -right-2 sm:-top-8 sm:-right-8 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl shadow-2xl p-3 sm:p-4 max-w-[14rem] sm:max-w-xs transform hover:scale-105 transition-transform">
-            <div className="flex items-center gap-2 text-white">
-              <Star className="w-5 h-5 fill-white" />
-              <span className="font-black text-base sm:text-lg">
-                Most Popular
-              </span>
+          {/*}
+          <div className="absolute -right-4 -top-4 rounded-2xl bg-[#1d5a42] p-4 text-white shadow-[0_18px_35px_rgba(29,90,66,0.25)] sm:-right-8">
+            <div className="flex items-center gap-2">
+              <Star className="h-4 w-4 fill-current text-amber-300" />
+              <span className="text-sm font-semibold">Most popular</span>
             </div>
-            {/*<div className="text-white/90 text-xs sm:text-sm mt-">
-              Fresh Daily
-            </div>*/}
-          </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="flex flex-col items-center gap-2 text-white/60">
-          <div className="text-sm font-semibold">
-            Scroll to explore
-          </div>
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-3 bg-white/50 rounded-full animate-pulse"></div>
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>
