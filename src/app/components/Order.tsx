@@ -39,9 +39,14 @@ export function Order() {
               ))}
             </div>
 
-            <button type="button" onClick={scrollToProducts} className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-[#1d5a42] transition hover:bg-emerald-50">
-              Browse products & order
-            </button>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <button type="button" onClick={scrollToProducts} className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-[#1d5a42] transition hover:bg-emerald-50">
+                Browse products & order
+              </button>
+              <span className="inline-flex items-center rounded-full border border-red-200 bg-red-200 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-emerald-800">
+                Coming Soon
+              </span>
+            </div>
           </div>
 
           <div className="space-y-6">
