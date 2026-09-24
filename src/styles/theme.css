@@ -1,44 +1,44 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --font-size: 20px;
-  --background: #f4f7f2;
-  --foreground: #13271d;
-  --card: #ffffff;
-  --card-foreground: #13271d;
-  --popover: #ffffff;
-  --popover-foreground: #13271d;
-  --primary: #1d5a42;
-  --primary-foreground: #f7faf7;
+  --font-size: 16px;
+  --background: #f5f2ea;
+  --foreground: #1a2f27;
+  --card: #fffdf9;
+  --card-foreground: #1a2f27;
+  --popover: #fffdf9;
+  --popover-foreground: #1a2f27;
+  --primary: #1e5d44;
+  --primary-foreground: #f5faf6;
   --secondary: #edf5ee;
-  --secondary-foreground: #183d2e;
-  --muted: #edf3ee;
-  --muted-foreground: #4f665d;
-  --accent: #dfe9df;
-  --accent-foreground: #173d2d;
-  --destructive: #b64242;
+  --secondary-foreground: #1c382d;
+  --muted: #f1efe7;
+  --muted-foreground: #5b6d63;
+  --accent: #dfeadf;
+  --accent-foreground: #1a382d;
+  --destructive: #b1574b;
   --destructive-foreground: #ffffff;
-  --border: rgba(19, 39, 29, 0.11);
+  --border: rgba(24, 55, 43, 0.12);
   --input: transparent;
-  --input-background: #f5f7f5;
+  --input-background: #f9f7f3;
   --switch-background: #dfe9df;
   --font-weight-medium: 600;
   --font-weight-normal: 400;
-  --ring: rgba(29, 90, 66, 0.4);
-  --chart-1: #1d5a42;
-  --chart-2: #7ea77b;
-  --chart-3: #d7a068;
-  --chart-4: #b2cbbc;
-  --chart-5: #e7d9ad;
-  --radius: 1.1rem;
-  --sidebar: #f8faf8;
-  --sidebar-foreground: #13271d;
-  --sidebar-primary: #1d5a42;
-  --sidebar-primary-foreground: #f7faf7;
-  --sidebar-accent: #eef5ef;
-  --sidebar-accent-foreground: #183d2e;
-  --sidebar-border: rgba(19, 39, 29, 0.1);
-  --sidebar-ring: rgba(29, 90, 66, 0.4);
+  --ring: rgba(30, 93, 68, 0.36);
+  --chart-1: #1e5d44;
+  --chart-2: #7bb788;
+  --chart-3: #d69e68;
+  --chart-4: #b8d2ba;
+  --chart-5: #e7dcc0;
+  --radius: 1.35rem;
+  --sidebar: #f8faf7;
+  --sidebar-foreground: #1a2f27;
+  --sidebar-primary: #1e5d44;
+  --sidebar-primary-foreground: #f5faf6;
+  --sidebar-accent: #edf5ee;
+  --sidebar-accent-foreground: #1c382d;
+  --sidebar-border: rgba(24, 55, 43, 0.12);
+  --sidebar-ring: rgba(30, 93, 68, 0.36);
 }
 
 .dark {
@@ -145,71 +145,81 @@
     @apply bg-background text-foreground;
     font-family: Inter, 'Segoe UI', sans-serif;
     letter-spacing: -0.01em;
-    background-image: radial-gradient(circle at top, rgba(135, 169, 136, 0.12), transparent 35%), var(--background);
+    background: linear-gradient(180deg, #f7f3ec 0%, #f2f7f2 28%, #edf4ee 100%);
+    color: var(--foreground);
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at top left, rgba(31, 93, 68, 0.12), transparent 28%), radial-gradient(circle at bottom right, rgba(112, 148, 115, 0.14), transparent 30%);
+    z-index: 0;
   }
 
   ::selection {
-    background: rgba(29, 90, 66, 0.15);
+    background: rgba(30, 93, 68, 0.18);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    letter-spacing: -0.04em;
+    letter-spacing: -0.05em;
   }
 
   h1 {
-    font-size: var(--text-2xl);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.2;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 800;
+    line-height: 0.95;
   }
 
   h2 {
-    font-size: var(--text-xl);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.25;
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    font-weight: 700;
+    line-height: 1.08;
   }
 
   h3 {
-    font-size: var(--text-lg);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.35;
+    font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.2;
   }
 
   h4 {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.4;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.35;
   }
 
   label {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
+    font-size: 1rem;
+    font-weight: 600;
     line-height: 1.5;
   }
 
   button {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
+    font-size: 1rem;
+    font-weight: 600;
     line-height: 1.5;
   }
 
   input {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-normal);
+    font-size: 1rem;
+    font-weight: 400;
     line-height: 1.5;
   }
 }
 
 @layer components {
   .section-shell {
-    @apply mx-auto w-full max-w-[1440px] px-3 sm:px-3.5 lg:px-4;
+    @apply relative z-10 mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8;
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-800;
+    @apply inline-flex items-center gap-2 rounded-full border border-emerald-200/80 bg-emerald-50/90 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-emerald-800 shadow-[0_10px_25px_rgba(30,93,68,0.08)];
   }
 
   .section-title {
-    @apply text-3xl font-semibold text-slate-900 md:text-5xl;
+    @apply text-3xl font-bold tracking-[-0.05em] text-slate-900 md:text-5xl;
   }
 
   .section-subtitle {
@@ -217,15 +227,15 @@
   }
 
   .soft-card {
-    @apply rounded-[1.75rem] border border-emerald-100 bg-white shadow-[0_18px_50px_rgba(16,61,45,0.08)];
+    @apply rounded-[1.8rem] border border-emerald-100/90 bg-white/80 shadow-[0_18px_45px_rgba(16,61,45,0.08)] backdrop-blur-sm;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[#1d5a42] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#153f30] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/60 focus-visible:ring-offset-2;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[#1e5d44] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(30,93,68,0.22)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#174a39] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/60 focus-visible:ring-offset-2;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white/75 px-6 py-3 text-sm font-semibold text-slate-800 transition-all duration-200 hover:-translate-y-0.5 hover:border-emerald-300 hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/60 focus-visible:ring-offset-2;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white/80 px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-[0_10px_25px_rgba(15,23,42,0.05)] transition-all duration-200 hover:-translate-y-0.5 hover:border-emerald-300 hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/60 focus-visible:ring-offset-2;
   }
 }
 

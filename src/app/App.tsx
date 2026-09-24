@@ -11,7 +11,7 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#f4f7f2] text-slate-900 antialiased">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(45,106,81,0.08),transparent_25%),linear-gradient(180deg,#f7f3ec_0%,#f2f7f2_40%,#edf4ee_100%)] text-slate-900 antialiased">
       <Toaster position="top-center" richColors />
       <Navigation />
       <main className="overflow-x-hidden">
